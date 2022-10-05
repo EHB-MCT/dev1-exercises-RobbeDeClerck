@@ -58,5 +58,6 @@
             "reset": false,
             "stash": false
         }
-    }
+    },
+    "liveServer.settings.multiRootWorkspaceName": "dev1-exercises-RobbeDeClerck"
 }
