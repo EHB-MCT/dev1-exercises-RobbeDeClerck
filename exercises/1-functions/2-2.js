@@ -16,24 +16,19 @@ let colorRandomTwo;
 let colorRandomThree;
 let colorSum;
 
-drawRandomColors(margin, sizeSquare, colorSum);
-drawRandomColors(margin, sizeSquare, colorSum);
-drawRandomColors(margin, sizeSquare, colorSum);
-drawRandomColors(margin, sizeSquare, colorSum);
-drawRandomColors(margin, sizeSquare, colorSum);
-drawRandomColors(margin, sizeSquare, colorSum);
-drawRandomColors(margin, sizeSquare, colorSum);
+for(var i = 0; i<8;i++){
+    drawRandomColors(margin, sizeSquare, colorSum);
+}
 
 function drawRandomColors(startpos, size, color){
 
-    let colorRandom = Math.floor(Math.random() * 10);
-    let colorRandomTwo = Math.floor(Math.random() * 10);
-    let colorRandomThree = Math.floor(Math.random() * 10);
+    let colorRandom = Math.floor(Math.random() * 9);
+    let colorRandomTwo = Math.floor(Math.random() * 9);
+    let colorRandomThree = Math.floor(Math.random() * 9);
     let colorSum = "#" + colorRandom + colorRandom + colorRandomTwo + colorRandomTwo + colorRandomThree + colorRandomThree;
     
     context.beginPath();
     context.rect(startpos, startpos, size, size);
-    context.fillStyle = color;
     context.fill();
 
     console.log(context.fillStyle = colorSum);
