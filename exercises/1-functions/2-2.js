@@ -29,6 +29,7 @@ function drawRandomColors(startpos, size, color){
     
     context.beginPath();
     context.rect(startpos, startpos, size, size);
+    context.fillStyle = color;
     context.fill();
 
     console.log(context.fillStyle = colorSum);
