@@ -1,6 +1,6 @@
 "use strict";
-import context from "../scripts/context.js";
-import * as Utils from "../scripts/utils.js";
+import context from "../../scripts/context.js";
+import * as Utils from "../../scripts/utils.js";
 
 let horizontalLines = 60;
 let verticalLines = 30;
